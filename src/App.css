@@ -1,38 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap'); /* Import the Glacial Indifference font */
+
 .App {
   text-align: center;
+  font-family: 'Glacial Indifference', sans-serif; /* Apply the Glacial Indifference font */
+  background-color: #333544; /* Replace 'hexcode' with the actual hex code */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Split-container {
+  display: flex; /* Use flexbox to create two columns */
+  height: 100vh; /* Set the height to full viewport height */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Left-side,
+.Right-side {
+  flex: 1; /* Each side takes up equal width */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
 }
 
-.App-link {
-  color: #61dafb;
+/* Adjustments for the Left-side */
+.Top-image {
+  max-width: 80%; /* Adjust based on your preference */
+  margin-bottom: 20px; /* Space between the image and the first block of text */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Text-block {
+  margin: 10px 0; /* Space between text blocks */
+}
+
+.Text-block-1 {
+  font-size: 57px;
+  color: #ffffff; /* Sets the text color to white */
+}
+
+.Text-block-2 {
+  font-size: 38px;
+  color: #ffffff; /* Sets the text color to white */
+}
+
+.Text-block-3 {
+  font-size: 33px;
+  color: #38B6FF; /* Sets the text color to white */
+}
+
+/* Adjustments for the Right-side */
+.Right-side {
+  background-image: url('./assets/right-bg.png'); /* Use the specified background image */
+  background-size: cover; /* Cover the entire div with the image */
+  background-position: center; /* Center the background image */
 }
